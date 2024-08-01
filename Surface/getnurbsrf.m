@@ -29,7 +29,7 @@ function [srf, nUSFV, mUSFV, uksi, ueta] = getnurbsrf(cPts, weights,...
         srf = zeros(size(nShpeFuncs, 2), size(mShpeFuncs, 2), size(cPts, 3));   % Initiliases the 3-d vector of the points on the curve.
         for ii = 1:size(cPts, 3)
            srf(:,:,ii) = nShpeFuncs' * (weights .* cPts(:, :, ii)) *...
-               mShpeFuncs ./denominator;
+               mShpeFuncs ./denominator;        % Estimates the NURBS surface.
         end
         for ii = 1:size(srf, 1)
             for jj = 1:size(srf, 2)
