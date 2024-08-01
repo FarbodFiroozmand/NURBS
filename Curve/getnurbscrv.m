@@ -4,7 +4,7 @@
 %
 % INPUTS:
 %   knotVector - A normalised real-valued knot vector. 
-%   shapeFuncs - A real-valued vector containg the shape function values.
+%   shapeFuncDg - An integer specifying the polynomial degree of the B-spline.
 %   weights - A real-valued vector range between 0.0 and 1.0.
 %   cPts - A real-valued 3-d vector containing all the necessary control points.
 % OUTPUTS:
