@@ -26,7 +26,7 @@ function [nurbsCurve, usfv, uksi] = getnurbscrv(knotVector, shapeFuncDg,...
     else
     nurbsCurve = zeros(size(cPts, 1), size(shpeFuncs, 2));  % Initiliases the 2-d vector of the points on the curve.
     for ii = 1:size(cPts, 3)
-        nurbsCurve = nurbsCurve + cPts(:, :, ii) .* rSFVs(ii, :);   % Estimates the B-spline curve.
+        nurbsCurve = nurbsCurve + cPts(:, :, ii) .* rSFVs(ii, :);   % Estimates the NURBS curve.
     end
         for ii = 1:size(nurbsCurve, 1)
             for jj = 1:size(nurbsCurve, 2)
