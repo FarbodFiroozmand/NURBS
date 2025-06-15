@@ -1,6 +1,7 @@
-% This script plots a random NURBS surface of degree 2 along
-% the ksi-axis and degree 1 along the eta-axis, using knot vectors
-% [0,0,0,0.5,1,1,1] and [0,0,0,1,1,1], and random control points. 
+% Plots a random NURBS surface of degree 2 along the ksi-axis and degree 1
+% along the eta-axis, using knot vectors [0,0,0,0.5,1,1,1] and [0,0,0,1,1,1],
+% and randomly generated control points. 
+%%
 clc; clear; close all;
 %% Inputs
 knotVectorKsi = [0,0,0,0.5,1,1,1];
