@@ -1,14 +1,14 @@
-% This functions approximates a NURBS curve by computing enough number 
-% of points on the ideal curve using control points (cPts), weights,
-% knot vector, and the shape (or basis) function values.
+% This functions approximates a NURBS curve by computing sufficient
+% number of points on the ideal curve using control points (cPts),
+% weights, knot vector, and the shape (or basis) function values.
 %
 % INPUTS:
 %   knotVector - A normalised real-valued knot vector. 
-%   shapeFuncsDg - 
+%   shapeFuncsDg - An integer as the polynomial degree.
 %   weights - A real-valued vector range between 0.0 and 1.0.
 %   cPts - A real-valued 3-d vector containing all the necessary control points.
 % OUTPUTS:
-%   bspln - The computed points on the B-spline curve.
+%   nurbsCurve - The computed points on the NURBS curve.
 %   usfv - A reduced 2d matrix of shape function values without zero rows.
 %   uksi - A reduced 2d matrix of knot values without zero rows.
 % Example:
