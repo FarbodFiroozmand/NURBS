@@ -1,4 +1,4 @@
-% This functions approximates a NURBS surface by computing enough number 
+% This functions approximates a NURBS surface by computing sufficient number 
 % of points on the ideal surface using control points (cPts), weights,
 % knot vectors, and the shape (or basis) function values.
 %
